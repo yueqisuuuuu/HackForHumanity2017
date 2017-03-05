@@ -25,6 +25,10 @@ p {
 
 }
 
+#intro-pic{
+    margin-top:90px;
+}
+
 .btn-primary {
   padding: 8px 20px;
   background: #fff;
@@ -37,7 +41,7 @@ p {
 .btn-primary:hover, 
 .btn-primary:focus{
   background: #fff;
-  color:#2487cd;
+  color:#006622;
   outline: none;
   box-shadow: none;
 } 
@@ -52,7 +56,7 @@ p {
 }
 
 .site-logo a.brand {
-	color: #2487cd;	
+	color: #006622;
 	font-size: 40px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
@@ -78,6 +82,11 @@ p {
 
 .nav.navbar-nav {
 	padding:30px;
+}
+
+.navbar-header{
+    margin-top: 25px;
+    margin-bottom:0px;
 }
 
 .navbar-fixed-top ul.nav li a {
@@ -128,7 +137,7 @@ p {
 .navbar-fixed-top .nav li a:hover{
     outline: 0;
   
-	color:#2487cd;
+	color:#006622;
 }
 
 .navbar-toggle {
@@ -143,7 +152,7 @@ p {
 }
 
 .navbar-fixed-top .special {
-    background-color: #2487cd;
+    background-color: #006622;
     color: white;
     margin-left: 10px;
     margin-bottom:5px;
@@ -166,11 +175,11 @@ p {
 }
 
 #carousel-slider .carousel-indicators li {
-  border: 1px solid #ffbd20;
+  border: 1px solid #006622;
 }
 
 #carousel-slider a i {
-  border: 1px solid #2487cd;;
+  border: 1px solid #006622;
   border-radius:50%;
   font-size: 30px;
   height: 50px;
@@ -179,13 +188,13 @@ p {
   top: 50%;
   width: 50px;
   color:#fff;
-  background:#2487cd;
+  background:#006622;
 }
 
 #carousel-slider a i:hover {
-  background:#2487cd;
+  background:#006622;
   color:#fff;
-  border: 1px solid #2487cd;
+  border: 1px solid #006622;
 }
 
 #carousel-slider 
@@ -258,8 +267,8 @@ p {
 .portfolio-filter > li a:hover,
 .portfolio-filter > li a.active{
   color:#fff;
-  background: #2487cd ;
-  border: 1px solid #2487cd ;
+  background: #006622 ;
+  border: 1px solid #006622 ;
   box-shadow: none;
   -webkit-box-shadow: none;
 }
@@ -537,17 +546,17 @@ a.accordion-toggle  i{
   margin-top: -10px;
   text-align: center;
   margin-right: -15px;
-  background: #2487cd;
+  background: #006622;
   color:#fff;
 }
 
 .panel-heading.active a.accordion-toggle i{
-  background: #2487cd;
+  background: #006622;
   color: #fff;
 }
 
 .panel-heading.active a.accordion-toggle.collapsed i{
-  background: #2487cd;
+  background: #006622;
   color: #fff;
 }
 
@@ -647,7 +656,7 @@ textarea#message{
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
-  background: #2487cd;
+  background: #006622;
 }
 
 #footer a {
