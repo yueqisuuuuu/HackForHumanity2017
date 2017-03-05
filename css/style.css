@@ -46,7 +46,8 @@ p {
 /* --- logo --- */
 .site-logo {	
 	margin-top:40px;
-	margin-bottom:40px;
+	margin-bottom:20px;
+    margin-left: 20px;
     float: left;
 }
 
@@ -95,7 +96,7 @@ p {
 }
 
 .navbar-fixed-top ul.nav ul.dropdown-menu {
-	  border-radius: 0;	
+    border-radius: 0;
 	margin-top: 21px;
 	border-top: none;
 }
@@ -124,12 +125,10 @@ p {
     transition: background .3s ease-in-out;
 }
 
-.navbar-fixed-top .nav li a:hover,
-.navbar-fixed-top .nav li a:focus,
-.navbar-fixed-top.nav li.active {
+.navbar-fixed-top .nav li a:hover{
     outline: 0;
   
-	color:#2487cd ;
+	color:#2487cd;
 }
 
 .navbar-toggle {
@@ -143,8 +142,22 @@ p {
     outline: 0;
 }
 
+.navbar-fixed-top .special{
+    background-color: #2487cd;
+    color: white;
+    margin-left: 10px;
+    margin-bottom:5px;
+}
+
+.navbar-fixed-top .special a:hover:not(.current) {
+    background-color: white;
+    border-style: round;
+}
+
+
+
 .slider {
-	padding-top:50px;
+	padding-top:90px;
 }
 
 .slider img {
@@ -173,7 +186,7 @@ p {
   top: 50%;
   width: 50px;
   color:#fff;
-   background:#2487cd;
+  background:#2487cd;
 }
 
 #carousel-slider a i:hover {
