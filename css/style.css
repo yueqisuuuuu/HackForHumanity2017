@@ -137,9 +137,17 @@ p {
 
 .navbar-fixed-top .nav li a:hover{
     outline: 0;
-  
+    background-color:white;
 	color:#006622;
 }
+
+.navbar-fixed-top .nav .special a{
+    outline: 0;
+    background-color:#006622;
+    color:white;
+}
+
+
 
 .navbar-toggle {
     padding: 4px 12px;
