@@ -77,8 +77,29 @@
                                <h3> My trees: </h3> <br> <br>
                                <div class="col-xs-6 col-sm-3 placeholder">
                             <img src="image/tree_account.jpg" width="250" height="250" class="img-responsive" alt="Generic placeholder thumbnail">
-                                <h4>Label</h4>
-                                <span class="text-muted">Something else</span>
+                                <h4><span class="text-muted" name="name_change" onclick="nameChange()">TreeTime </span></h4>
+
+                                <div id="new_name"> </div>
+                                <form
+                                <button name="new_name" onclick="display()">Display name</button>
+                                <button onclick="change()">Change name</button>
+
+<script>
+function display() {
+    var x = document.getElementById("new_name").value;
+    alert("The name of the text field is: " + x);
+
+
+
+}
+
+function change() {
+    var x = document.getElementById("myText").name = "username";
+    alert ("The name was changed to: " + x);
+}
+</script>
+
+</span>
                                 </div>
                         <div class="col-xs-6 col-sm-3 placeholder">
                             <img src="image/tree_account1.jpg" width="250" height="250" class="img-responsive" alt="Generic placeholder thumbnail">
@@ -97,25 +118,29 @@
                     <div class="row placeholders">
                         <div class="col-xs-6 col-sm-3 placeholder">
                             <img src="image/badge1.jpg" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
-                                <h4>Label</h4>
-                                <span class="text-muted">Something else</span>
+                                <h4>Create an Account Badge</h4>
+                                <span class="text-muted">Congratulations, you created an account! You're on the road to make a difference.</span>
                                 </div>
                         <div class="col-xs-6 col-sm-3 placeholder">
                             <img src="image/badge2.png" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
-                                <h4>Label</h4>
-                                <span class="text-muted">Something else</span>
+                                <h4>Tree Hugger Badge</h4>
+                                <span class="text-muted">You have adopted 3 trees.</span>
                                 </div>
                         <div class="col-xs-6 col-sm-3 placeholder">
                             <img src="image/badge3.png" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
-                                <h4>Label</h4>
-                                <span class="text-muted">Something else</span>
+                                <h4>Tree Lover Badge</h4>
+                                <span class="text-muted">You have checked in on your tree(s) 100 days in a row. </span>
                                 </div>
                         <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="image/badge4.jpg" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">                           <h4>Label</h4>
-                                <span class="text-muted">Something else</span>
+                            <img src="image/badge4.jpg" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">                           <h4>Tree Adoption Connoisseur</h4>
+                                <span class="text-muted">You have adopted 10 trees. </span>
                                 </div>
                     </div>
         </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+              <h1 class="page-header"> Administrator Tools </h1>
+              </div>
 </div>
     </body>
   
