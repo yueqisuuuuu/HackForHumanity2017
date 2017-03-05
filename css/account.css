@@ -12,6 +12,11 @@ body {
     padding-top: 50px;
 }
 
+h3
+{
+    float:left;
+}
+
 
 /*
  * Global add-ons
