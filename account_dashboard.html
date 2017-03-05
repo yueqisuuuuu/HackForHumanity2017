@@ -19,6 +19,7 @@
      <link href="css/account.css" rel="stylesheet">
           <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <!-- =======================================================
         Theme Name: OnePage
         Theme URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
@@ -28,7 +29,7 @@
   </head>
   <body>
 <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+        <div class="container" style="margin:0; width:100%;">
             <div class="row">
                     <div class="site-logo">
                         <a href="index.html" class="brand">Trees GO</a>
@@ -57,83 +58,86 @@
                         <a href="index.html" class="brand">Adopt-a-Tree SJ</a>
     
 <div class="account">
-                <div class="col-sm-3 col-md-2 sidebar">
-                <br> 
-                    <h2> <b> MY INFO </b> <i class="fa fa-user" style="font-size:36px"></i>  </h2>
-                    <i class="fa fa-user-circle-o" style="font-size:36px"> </i> 
+    
 
-                    <p> Name <i class="fa fa-leaf"></i> </p>
-                    
-                    <p> Number of Trees Adopted <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> </p>
-                    <p> Days Active <i class="fa fa-leaf"></i> </p>
-                    <button style="font-size:16px" class="btn btn-success"> Check Today</button>
-
-                    </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
               <h1 class="page-header"> My Tree </h1>
               <br>
-              <div class="placeholders">
+              <div class="row placeholders">
                         <div class="col-xs-6 col-sm-3 placeholder" style="text-align: center;">
-                            <img src="image/tree_account2.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <img src="image/tree_account2.jpg" class="img-responsive" alt="Generic placeholder thumbnail" >
 
-                                <h4><span class="text-muted" class="name_change" onclick="nameChange()"> TreeTime </span></h4>
+                                <h4><span class="text-muted" class="name_change" onclick="nameChange()"> Eugene </span></h4>
                                 <p> Tree Age: <b> 60 years </b> </p>
                                 <p> Tree Location: <b> Central Park, Kiely Blvd. </b> </p>
 
-                                <button onclick="change()">Details</button>
-
-                                </div>
-                        </div>
+                            </div>
 
                         <div class="col-xs-6 col-sm-3 placeholder" style="text-align: center;">
-                            <img src="image/tree_account.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <img src="image/tree_account.jpg" class="img-responsive" alt="Generic placeholder thumbnail" style="margin-bottom:30px;" >
 
-                                <h4><span class="text-muted" class="name_change" onclick="nameChange()"> TreeTime </span></h4>
+                                <h4><span class="text-muted" class="name_change" onclick="nameChange()"> Zach </span></h4>
                                 <p> Tree Age: <b> 60 years </b> </p>
                                 <p> Tree Location: <b> Central Park, Kiely Blvd. </b> </p>
-                                <button onclick="change()">Details</button>
                         </div>
                         <div class="col-xs-6 col-sm-3 placeholder" style="text-align: center;">
-                            <img src="image/tree_account1.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
-                                <h4><span class="text-muted" class="name_change" onclick="nameChange()"> TreeTime </span></h4>
+                            <img src="image/tree_account1.jpg" class="img-responsive" alt="Generic placeholder thumbnail" >
+                                <h4><span class="text-muted" class="name_change" onclick="nameChange()"> Sneha </span></h4>
                                 <p> Tree Age: <b> 22 years </b> </p>
                                 <p> Tree Location: <b> 2914 El Camino Real </b> </p>
-                                <button onclick="change()">Details</button>
                         </div>
-
+                        </div>
                 </div>
 
-            </div>
 
-                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+<!-- sidebar-collapse -->
+<div class="col-sm-3 col-md-2 sidebar" style="padding-bottom:80px">
+    <br>
+    <h2 style="padding-top:10px"> <b> MY INFO </b> <i class="fa fa-user" style="font-size:36px"></i>  </h2>
+    <hr>
+    <i class="fa fa-user-circle-o" style="font-size:36px"> </i>
+    
+    <p> Name <i class="fa fa-leaf"></i> </p>
+    
+    <p> Number of Trees Adopted <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> </p>
+    <p> Days Active <i class="fa fa-leaf"></i> </p>
+    <button style="font-size:16px" class="btn btn-success"> Check Today</button>
+</div>
+
+
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     <h1 class="page-header">My Badges</h1>
-                    <div class="row placeholders">
+                    <div class="row placeholders" >
                         <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="image/badge1.jpg" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <img src="image/badge1.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
                                 <h4>Create an Account Badge</h4>
-                                <span class="text-muted">Congratulations, you created an account! You're on the road to make a difference.</span>
+                                <span class="text-muted">You're on the road to make a difference.</span>
                                 </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="image/badge2.png" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <div class="col-xs-6 col-sm-3 placeholder" style="padding-bottom:50px;">
+                            <img src="image/badge2.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
                                 <h4>Tree Hugger Badge</h4>
                                 <span class="text-muted">You have adopted 3 trees.</span>
                                 </div>
                         <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="image/badge3.png" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <img src="image/badge3.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
                                 <h4>Tree Lover Badge</h4>
                                 <span class="text-muted">You have checked in on your tree(s) 100 days in a row. </span>
                                 </div>
                         <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="image/badge4.jpg" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">                           <h4>Tree Adoption Connoisseur</h4>
+                            <img src="image/badge4.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">                           <h4>Tree Adoption Connoisseur</h4>
                                 <span class="text-muted">You have adopted 10 trees. </span>
                                 </div>
                     </div>
         </div>
+    </div>
+    
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
               <h1 class="page-header"> Administrator Tools </h1>
          </div>
+        
+
     </body>
   
     </html> 

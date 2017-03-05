@@ -10,6 +10,7 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
+    width:100%;
 }
 
 h3
@@ -42,7 +43,7 @@ h3
 
 /* Hide for mobile, show later */
 .sidebar {
-    display: none;
+    display: block;
 }
 @media (min-width: 768px) {
     .sidebar {
@@ -60,7 +61,7 @@ h3
     }
 }
 
-/* Sidebar navigation */
+/* Sidebar */
 .nav-sidebar {
     margin-top: 60px;
     margin-right: -21px; /* 20px padding + 1px border */
