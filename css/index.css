@@ -63,8 +63,9 @@
 	margin-bottom:40px;
 }
 
-.container{
+#about-pic{
     width: 100%;
+    margin-bottom:20px;
 }
 
 .panel-default{

@@ -3,44 +3,6 @@
     font-size: 16px;
 }
 
-/*
- * Base structure
- */
-
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-    padding-top: 50px;
-    width:100%;
-}
-
-h3
-{
-
-    float:left;
-}
-
-
-/*
- * Global add-ons
- */
-
-.sub-header {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-}
-
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
-.navbar-fixed-top {
-    border: 0;
-}
-
-/*
- * Sidebar
- */
-
 /* Hide for mobile, show later */
 .sidebar {
     display: block;
@@ -110,31 +72,13 @@ h3
 
 .placeholder {
     margin-bottom: 20px;
+    text-align: center;
 }
 .placeholder img {
     display: inline-block;
     border-radius: 50%;
+}
 
-.imgWrap {
-  position: relative;
-  height: 640px;
-  width: 480px;
-}
-.imgDescription {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(29, 106, 154, 0.72);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  /*remove comment if you want a gradual transition between states
-      -webkit-transition: visibility opacity 0.2s;
-      */
-}
-.imgWrap:hover .imgDescription {
-  visibility: visible;
-  opacity: 1;
-}
+
+
+
