@@ -1,2 +1,2 @@
-# HackForHumanity2017
-SJ Community Adoption Web App
+# TreesGO
+2017 Business Pitch Competition
