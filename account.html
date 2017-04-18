@@ -16,6 +16,7 @@
 
     <link href="css/default.css" rel="stylesheet">
     <link href="css/account.css" rel="stylesheet">
+        
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -56,70 +57,73 @@
 </nav>
 
 <!-- sidebar-collapse -->
-<div class="col-sm-3 col-md-2 sidebar">
+<div class="col-sm-3 col-md-3 sidebar">
     <br>
-    <h2 style="padding-top:10px"> <b> MY INFO </b> <i class="fa fa-user" style="font-size:36px"></i>  </h2>
+    <h1> MY INFO </h1>
     <hr>
-    <i class="fa fa-user-circle-o" style="font-size:36px"> </i>
-    
-    <p> Name <i class="fa fa-leaf"></i> </p>
-    
-    <p> Number of Trees Adopted <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> </p>
-    <p> Days Active <i class="fa fa-leaf"></i> </p>
-    <button style="font-size:16px" class="btn btn-success"> Check Today</button>
+    <h5> Name </h5>
+    <h5> Trees Adopted </h5>
+    <h5> Days Active </h5>
+    <h5> Last Check In </h5>
 </div>
 
-<div class="account">
+<div class="col-sm-9 col-md-8 account">
 
-    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        <h1 class="page-header"> My Tree </h1>
+    <div class="main">
+        <h2 class="page-header"> My Tree </h2>
         <br>
         <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
-                <img src="image/tree_account2.jpg" class="img-responsive" alt="Generic placeholder thumbnail" >
-                <h4><span class="text-muted" class="name_change" onclick="nameChange()"> Eugene </span></h4>
+                <img src="image/tree_account2.jpg" class="treeImg" alt="Tree Image" >
+                <h4><span onclick="nameChange()"> Eugene </span></h4>
                 <p> Tree Age: <b> 60 years </b> </p>
                 <p> Tree Location: <b> Central Park, Kiely Blvd. </b> </p>
+                <button> Details </button>
+                <button> Check IN </button>
             </div>
 
             <div class="col-xs-6 col-sm-3 placeholder">
-                <img src="image/tree_account.jpg" class="img-responsive" alt="Generic placeholder thumbnail" style="margin-bottom:30px;" >
-                <h4><span class="text-muted" class="name_change" onclick="nameChange()"> Zach </span></h4>
+                <img src="image/tree_account.jpg" class="treeImg" alt="Tree Image">
+                <h4><span onclick="nameChange()"> Zack </span></h4>
                 <p> Tree Age: <b> 60 years </b> </p>
                 <p> Tree Location: <b> Central Park, Kiely Blvd. </b> </p>
+                <button> Details </button>
+                <button> Check IN </button>
             </div>
             
             <div class="col-xs-6 col-sm-3 placeholder">
-                <img src="image/tree_account1.jpg" class="img-responsive" alt="Generic placeholder thumbnail" >
-                <h4><span class="text-muted" class="name_change" onclick="nameChange()"> Sneha </span></h4>
+                <img src="image/tree_account1.jpg" class="treeImg" alt="Tree Image" >
+                <h4><span onclick="nameChange()"> Sneha </span></h4>
                 <p> Tree Age: <b> 22 years </b> </p>
                 <p> Tree Location: <b> 2914 El Camino Real </b> </p>
+                <button> Details </button>
+                <button> Check IN </button>
             </div>
         </div>
     </div>
 
-    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        <h1 class="page-header">My Badges</h1>
+    <div class="main">
+        <h2 class="page-header">My Badges</h2>
         <div class="row placeholders" >
             <div class="col-xs-6 col-sm-3 placeholder">
                 <img src="image/badge1.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
                 <h4>Create an Account Badge</h4>
-                <span class="text-muted">You're on the road to make a difference.</span>
+                <span>You're on the road to make a difference.</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder" style="padding-bottom:50px;">
                 <img src="image/badge2.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
                 <h4>Tree Hugger Badge</h4>
-                <span class="text-muted">You have adopted 3 trees.</span>
+                <span>You have adopted 3 trees.</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
                 <img src="image/badge3.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
                 <h4>Tree Lover Badge</h4>
-                <span class="text-muted">You have checked in on your tree(s) 100 days in a row. </span>
+                <span>You have checked in on your tree(s) 100 days in a row. </span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
                 <img src="image/badge4.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
                 <h4>Tree Adoption Connoisseur</h4>
-                <span class="text-muted">You have adopted 10 trees. </span>
+                <span>You have adopted 10 trees. </span>
             </div>
         </div>
     </div>
@@ -127,7 +131,7 @@
 </div>
 
 
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+<div class="admin">
 
     <h2 class="page-header"> Administrator Tools </h2>
 </div>
@@ -141,9 +145,9 @@
             </div>
             <p>Email: customerservice@sanjoseca.gov </br>
             Address: 200 E. Santa Clara St.
-            San José, CA 95113</br>
+            San José, CA 95113<br>
             Ph:(408)-535-3500
-            Fax:(408)-292-6731
+            Fax:(408)-292-6731 <br>
             TTY:(408)-294-9337</p>
         </div>
         
