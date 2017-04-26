@@ -48,7 +48,7 @@
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#feature">Features</a></li>
                 <li><a href="index.html#about">About Us</a></li>
-                <li class="special"><a href="account.html" >Sign In</a></li>
+                <li class="special"><a href="account.html" >Account</a></li>
                 <li class="special"><a href="explore.htm" >Explore</a></li>
             </ul>
         </div>
@@ -59,8 +59,11 @@
 <!-- sidebar-collapse -->
 <div class="col-sm-3 col-md-3 sidebar">
     <br>
-    <h1> MY INFO </h1>
-    <hr>
+    <div id="my_info">
+        <a href="account.html"> <h1> MY INFO </h1> </a>
+        <a id="logout"> LogOut </a>
+    </div>
+    <hr style="clear:both">
     <h5> Name </h5>
     <h5> Trees Adopted </h5>
     <h5> Days Active </h5>
@@ -72,20 +75,20 @@
     <div class="main">
         <h2 class="page-header"> Update Account Information </h2>
         <form method="post" action="">
-            First Name <input type="text" name="fname" value="Bob" required> <br>
-            Last Name <input type="text" name="lname" value="B" required> <br>
-            Address <input type="text" name="address" value="500 El Camino Real, Santa Clara"> <br>
-            Email <input type="email" name="email" value="123@123.com" required> <br>
-            Phone <input type="tel" name="phone" value="1234567890"> <br>
+            First Name <input type="text" name="fname" value="Bob" required> &nbsp &nbsp &nbsp
+            Last Name <input type="text" name="lname" value="B" required> <br> <br>
+            Address <input type="text" name="address" value="500 El Camino Real"> &nbsp &nbsp &nbsp
+            City <input type="text" name="city" value="Santa Clara"> &nbsp &nbsp &nbsp
+            Zipcode <input type="text" name="zipcode" value="95053">  <br> <br>
+            Email <input type="email" name="email" value="123@123.com" required> <br> <br>
+            Phone <input type="tel" name="phone" value="1234567890"> <br> <br>
             
             <input type="reset">
             <input type="submit">
         </form>
         
     </div>
-
-
-
+</div>
     <footer id="footer" class="container row">
         <div class="col-md-6 col-md-offset-3">
             <div class="text-center">

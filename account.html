@@ -48,7 +48,7 @@
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#feature">Features</a></li>
                 <li><a href="index.html#about">About Us</a></li>
-                <li class="special"><a href="account.html" >Sign In</a></li>
+                <li class="special"><a href="account.html" >Account</a></li>
                 <li class="special"><a href="explore.htm" >Explore</a></li>
             </ul>
         </div>
@@ -59,23 +59,29 @@
 <!-- sidebar-collapse -->
 <div class="col-sm-3 col-md-3 sidebar">
     <br>
-    <h1> MY INFO </h1>
-    <hr>
+    <div id="my_info">
+    	<a href="account.html"> <h1> MY INFO </h1> </a>
+		<a id="logout"> LogOut </a>
+    </div>
+    <hr style="clear:both">
     <h5> Name </h5>
     <h5> Trees Adopted </h5>
     <h5> Days Active </h5>
     <h5> Last Check In </h5>
+    <br> <br>
+    <a href="update.html"> Update Account Information </a>
 </div>
 
 <div class="col-sm-9 col-md-8 account">
 
+    <!-- tree images need to be 200 X 300 -->
     <div class="main">
         <h2 class="page-header"> My Tree </h2>
         <br>
         <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
                 <img src="image/tree_account2.jpg" class="treeImg" alt="Tree Image" >
-                <h4><span onclick="nameChange()"> Eugene </span></h4>
+                <h4> Eugene</h4> <button onclick="nameChange()"> Change Name </button>
                 <p> Tree Age: <b> 60 years </b> </p>
                 <p> Tree Location: <b> Central Park, Kiely Blvd. </b> </p>
                 <button> Details </button>
@@ -104,24 +110,24 @@
 
     <div class="main">
         <h2 class="page-header">My Badges</h2>
-        <div class="row placeholders" >
-            <div class="col-xs-6 col-sm-3 placeholder">
-                <img src="image/badge1.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+        <div class="row" id="badge-display" >
+            <div class="col-xs-6 col-sm-3 badge_info">
+                <img src="image/badge1.jpg" width="200" height="200" alt="badge">
                 <h4>Create an Account Badge</h4>
                 <span>You're on the road to make a difference.</span>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder" style="padding-bottom:50px;">
-                <img src="image/badge2.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+            <div class="col-xs-6 col-sm-3 badge_info">
+                <img src="image/badge2.png" width="200" height="200" class="img-responsive" alt="badge">
                 <h4>Tree Hugger Badge</h4>
                 <span>You have adopted 3 trees.</span>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-                <img src="image/badge3.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+            <div class="col-xs-6 col-sm-3 badge_info">
+                <img src="image/badge3.png" width="200" height="200" class="img-responsive" alt="badge">
                 <h4>Tree Lover Badge</h4>
                 <span>You have checked in on your tree(s) 100 days in a row. </span>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-                <img src="image/badge4.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+            <div class="col-xs-6 col-sm-3 badge_info">
+                <img src="image/badge4.jpg" width="200" height="200" class="img-responsive" alt="badge">
                 <h4>Tree Adoption Connoisseur</h4>
                 <span>You have adopted 10 trees. </span>
             </div>
@@ -161,7 +167,7 @@
             </ul>
         </div>
         
-    </footer><!--/#footer-->
+    </footer>
     
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

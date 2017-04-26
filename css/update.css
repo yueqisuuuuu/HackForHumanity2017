@@ -2,11 +2,33 @@ body{
     margin-top:100px;
 }
 
+a{
+    text-decoration: none;
+    color: #006622;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #006622;
+}
+
 .update{
     margin-top: 50px;
     font-size: 16px;
     display: inline-block;
+    margin-bottom: 50px;
+}
 
+#my_info h1{
+    float: left;
+    color: #555;
+}
+
+#logout{
+    float: right;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 0px;
 }
 
 .main{
