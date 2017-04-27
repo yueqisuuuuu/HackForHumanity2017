@@ -57,9 +57,8 @@
 </nav>
 
 <!-- sidebar-collapse -->
-<div class="col-sm-3 col-md-3 sidebar">
-    <br>
-    <div id="my_info" class="tab">
+<div class="col-sm-3 col-md-3 sidebar card">
+    <div id="my_info">
     	<h1> MY INFO </h1>
     </div>
     <hr style="clear:both">
@@ -73,6 +72,8 @@
     	<br>
     	<a class="tablinks" onclick="openTab(event, 'update')"> Update Account Information </a>
     </div>
+    <br>
+    <br>
 </div>
 
 <div class="col-sm-9 col-md-8 tabcontent" id="account">
@@ -119,6 +120,8 @@
                 <h4>Create an Account Badge</h4>
                 <span>You're on the road to make a difference.</span>
             </div>
+
+     <!--
             <div class="col-xs-6 col-sm-3 badge_info">
                 <img src="image/badge2.png" width="200" height="200" class="img-responsive" alt="badge">
                 <h4>Tree Hugger Badge</h4>
@@ -134,6 +137,7 @@
                 <h4>Tree Adoption Connoisseur</h4>
                 <span>You have adopted 10 trees. </span>
             </div>
+		 -->
         </div>
     </div>
     
@@ -144,14 +148,18 @@
     <div class="main">
         <h2 class="page-header"> Update Account Information </h2>
         <form method="post" action="">
-            <span> First Name <input type="text" name="fname" value="Bob" required> </span>
-            <span> Last Name <input type="text" name="lname" value="B" required> </span>
+            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> First Name <input type="text" name="fname" value="Bob" required> </span>
+            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> Last Name <input type="text" name="lname" value="B" required> </span>
             <br> <br>
-            <span> Address <input type="text" name="address" value="500 El Camino Real"> </span>
-            <span> City <input type="text" name="city" value="Santa Clara"> </span>
-            Zipcode <input type="text" name="zipcode" value="95053">  <br> <br>
-            Email <input type="email" name="email" value="123@123.com" required> <br> <br>
-            Phone <input type="tel" name="phone" value="1234567890"> <br> <br>
+            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> Address <input type="text" name="address" value="500 El Camino Real"> </span>
+            <br><br>
+            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> City <input type="text" name="city" value="Santa Clara"> </span>
+            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> Zipcode <input type="text" name="zipcode" value="95053"> </span>
+            <br> <br>
+            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> Email <input type="email" name="email" value="123@123.com" required> </span>
+            <br> <br>
+            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> Phone <input type="tel" name="phone" value="1234567890"> </span>
+            <br> <br>
             
             <button type="reset"> Reset </button>
             <button type="submit"> Save </button>
@@ -160,13 +168,13 @@
     </div>
 </div>
 
-
+<!--
 <div class="admin">
 
     <h2 class="page-header"> Administrator Tools </h2>
 </div>
 
-
+-->
 
     <footer id="footer" class="container row">
         <div class="col-md-6 col-md-offset-3">
