@@ -12,11 +12,17 @@ a:hover{
     color: #006622;
 }
 
-.account{
+#account{
     margin-top: 50px;
     font-size: 16px;
     display: inline-block;
+}
 
+#update{
+    margin-top: 50px;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 50px;
 }
 
 .main{
@@ -36,13 +42,15 @@ a:hover{
     color: #555;
 }
 
+/*
 #logout{
     float: right;
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 10px;
     padding: 0px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
-
+*/
 
 /*
  * Main content

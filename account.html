@@ -29,13 +29,13 @@
   </head>
   
   
-<body>
+<body onload="openTab(event, 'account')">
     
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container row">
         <div class="site-logo">
-            <a href="index.html" class="brand">Trees GO</a>
+            <span class="brand">Trees GO</span>
         </div>
         
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -59,9 +59,8 @@
 <!-- sidebar-collapse -->
 <div class="col-sm-3 col-md-3 sidebar">
     <br>
-    <div id="my_info">
-    	<a href="account.html"> <h1> MY INFO </h1> </a>
-		<a id="logout"> LogOut </a>
+    <div id="my_info" class="tab">
+    	<h1> MY INFO </h1>
     </div>
     <hr style="clear:both">
     <h5> Name </h5>
@@ -69,10 +68,14 @@
     <h5> Days Active </h5>
     <h5> Last Check In </h5>
     <br> <br>
-    <a href="update.html"> Update Account Information </a>
+    <div class="tab">
+    	<a class="tablinks" onclick="openTab(event, 'account')"> My Account </a>
+    	<br>
+    	<a class="tablinks" onclick="openTab(event, 'update')"> Update Account Information </a>
+    </div>
 </div>
 
-<div class="col-sm-9 col-md-8 account">
+<div class="col-sm-9 col-md-8 tabcontent" id="account">
 
     <!-- tree images need to be 200 X 300 -->
     <div class="main">
@@ -136,6 +139,27 @@
     
 </div>
 
+<div class="col-sm-9 col-md-8 tabcontent" id="update">
+
+    <div class="main">
+        <h2 class="page-header"> Update Account Information </h2>
+        <form method="post" action="">
+            <span> First Name <input type="text" name="fname" value="Bob" required> </span>
+            <span> Last Name <input type="text" name="lname" value="B" required> </span>
+            <br> <br>
+            <span> Address <input type="text" name="address" value="500 El Camino Real"> </span>
+            <span> City <input type="text" name="city" value="Santa Clara"> </span>
+            Zipcode <input type="text" name="zipcode" value="95053">  <br> <br>
+            Email <input type="email" name="email" value="123@123.com" required> <br> <br>
+            Phone <input type="tel" name="phone" value="1234567890"> <br> <br>
+            
+            <button type="reset"> Reset </button>
+            <button type="submit"> Save </button>
+        </form>
+        
+    </div>
+</div>
+
 
 <div class="admin">
 
@@ -178,7 +202,7 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="js/main.js"></script>
-    
+    <script src="js/account.js"></script>
     
 </body>
 </html>

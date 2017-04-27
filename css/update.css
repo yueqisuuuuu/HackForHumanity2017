@@ -12,7 +12,7 @@ a:hover{
     color: #006622;
 }
 
-.update{
+#update{
     margin-top: 50px;
     font-size: 16px;
     display: inline-block;
@@ -37,6 +37,11 @@ a:hover{
     margin-left: 0px;
     width: 100%;
     padding: 0 3%;
+}
+
+.main button{
+    margin-right: 20px;
+    width: 80px;
 }
 
 .sidebar {

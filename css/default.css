@@ -38,14 +38,14 @@ p {
     float: left;
 }
 
-.site-logo a.brand {
+.site-logo span.brand {
 	color: #006622;
 	font-size: 40px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
 	
 }
-.site-logo a.brand:hover {
+.site-logo span.brand:hover {
 	text-decoration:none;
 }
 
